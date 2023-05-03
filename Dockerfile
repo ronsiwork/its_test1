@@ -1,4 +1,5 @@
 # Base image
+
 FROM alpine:3.9.6
 
 # Install npm
