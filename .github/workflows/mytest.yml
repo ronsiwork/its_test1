@@ -28,6 +28,6 @@ jobs:
     - name: POST build action
       run: docker images
     - name: RUN docker
-      run: docker run -it --rm -d -p 8080:80 --name web my-test-ci:latest
+      run: docker run -it --rm -d -p 80:80 --name web my-test-ci:latest
     - name: TEST webserver docker
-      run: curl localhost:8080 -v
+      run: curl localhost:80 -v
