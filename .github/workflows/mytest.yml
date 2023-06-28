@@ -33,3 +33,5 @@ jobs:
       run: wget http://localhost:8080
     - name: SHOW test result
       run: cat index.html  
+    - name: Trivy test result
+      run: docker run aquasec/trivy image my-test-ci:latest    
