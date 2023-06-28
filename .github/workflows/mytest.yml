@@ -34,4 +34,4 @@ jobs:
     - name: SHOW test result
       run: cat index.html  
     - name: Trivy test result
-      run: docker run aquasec/trivy image my-test-ci:latest    
+      run: docker run aquasec/trivy image my-test-ci:latest --scanners vuln   
