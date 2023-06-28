@@ -31,3 +31,5 @@ jobs:
       run: docker run -it -d -p8080:80 my-test-ci:latest
     - name: TEST webserver docker
       run: wget http://localhost:8080
+    - name: SHOW test result
+      run: cat index.html  
