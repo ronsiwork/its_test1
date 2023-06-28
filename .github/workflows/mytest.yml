@@ -30,4 +30,4 @@ jobs:
     - name: RUN docker
       run: docker run -it -d -p8080:80 my-test-ci:latest
     - name: TEST webserver docker
-      run: curl localhost:8080 -v
+      run: curl http://localhost:8080
